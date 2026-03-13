@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>ShopEasy | Electronics Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* BODY */
+
+body{
+margin:0;
+font-family:Arial;
+background:#f1f3f6;
+}
+
+
+/* HEADER */
+
+header{
+background:#2874f0;
+color:white;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:12px 40px;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+margin:0 12px;
+text-decoration:none;
+font-size:15px;
+}
+
+.search{
+display:flex;
+}
+
+.search input{
+width:300px;
+padding:8px;
+border:none;
+}
+
+.search button{
+background:#ff9f00;
+border:none;
+padding:8px 15px;
+cursor:pointer;
+}
+
+
+/* HERO */
+
+.hero{
+height:300px;
+background:linear-gradient(120deg,#2874f0,#00aaff);
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:45px;
+margin:10px;
+}
+
+.hero button{
+background:#ff9f00;
+border:none;
+padding:12px 30px;
+font-size:16px;
+cursor:pointer;
+}
+
+
+/* CATEGORY BAR */
+
+.categories{
+display:flex;
+justify-content:space-around;
+background:white;
+padding:15px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.categories div{
+text-align:center;
+cursor:pointer;
+}
+
+
+/* PRODUCT GRID */
+
+.products{
+padding:30px;
+}
+
+.productGrid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+
+/* PRODUCT CARD */
+
+.card{
+background:white;
+padding:15px;
+border-radius:6px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.04);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:contain;
+}
+
+.card h3{
+font-size:16px;
+}
+
+.price{
+font-size:18px;
+font-weight:bold;
+color:#212121;
+}
+
+.oldPrice{
+text-decoration:line-through;
+color:gray;
+font-size:14px;
+margin-left:6px;
+}
+
+.discount{
+color:green;
+font-size:14px;
+margin-left:6px;
+}
+
+.rating{
+background:green;
+color:white;
+font-size:12px;
+padding:3px 6px;
+border-radius:4px;
+}
+
+.card button{
+width:100%;
+padding:10px;
+margin-top:10px;
+background:#ff9f00;
+border:none;
+cursor:pointer;
+color:white;
+font-weight:bold;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#172337;
+color:white;
+padding:40px;
+margin-top:40px;
+}
+
+.footerGrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo">Harsh</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="cart.html">Cart</a>
+<a href="login.html">Login</a>
+</nav>
+
+<div class="search">
+<input type="text" placeholder="Search products">
+<button>Search</button>
+</div>
+
+</header>
+
+
+
+<section class="hero">
+
+<h1>Big Electronics Sale</h1>
+
+<p>Up to 60% Off On Gadgets</p>
+
+<a href="cart.html"><button>Shop Now</button></a>
+
+</section>
+
+
+
+<section class="categories">
+
+<div>Mobiles</div>
+<div>Laptops</div>
+<div>Headphones</div>
+<div>Smart Watch</div>
+<div>Accessories</div>
+
+</section>
+
+
+
+<section class="products">
+
+<h2>Best Selling Products</h2>
+
+<div class="productGrid">
+
+
+<div class="card">
+
+<img src="https://m.media-amazon.com/images/I/510uTHyDqGL.jpg">
+
+<h3>Gaming Laptop</h3>
+
+<div>
+<span class="price">₹49,999</span>
+<span class="oldPrice">₹60,000</span>
+<span class="discount">20% Off</span>
+</div>
+
+<p class="rating">4.5 ★</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://i.gadgets360cdn.com/large/red_magic_10_pro_1733282245149.jpg">
+
+<h3>Smartphone</h3>
+
+<div>
+<span class="price">₹29,999</span>
+<span class="oldPrice">₹40,000</span>
+<span class="discount">25% Off</span>
+</div>
+
+<p class="rating">4.6 ★</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://cdn.pixabay.com/photo/2016/11/29/05/08/headphones-1868612_1280.jpg">
+
+<h3>Headphones</h3>
+
+<div>
+<span class="price">₹3,999</span>
+<span class="oldPrice">₹5,000</span>
+<span class="discount">20% Off</span>
+</div>
+
+<p class="rating">4.3 ★</p>
+
+<button>Add To Cart</button>
+
+</div>
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/510uTHyDqGL.jpg">
+<h3>Gaming Laptop</h3>
+<div>
+<span class="price">₹49,999</span>
+<span class="oldPrice">₹60,000</span>
+<span class="discount">20% Off</span>
+</div>
+<p class="rating">4.5 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://i.gadgets360cdn.com/large/red_magic_10_pro_1733282245149.jpg">
+<h3>Smartphone</h3>
+<div>
+<span class="price">₹29,999</span>
+<span class="oldPrice">₹40,000</span>
+<span class="discount">25% Off</span>
+</div>
+<p class="rating">4.6 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2016/11/29/05/08/headphones-1868612_1280.jpg">
+<h3>Headphones</h3>
+<div>
+<span class="price">₹3,999</span>
+<span class="oldPrice">₹5,000</span>
+<span class="discount">20% Off</span>
+</div>
+<p class="rating">4.3 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2017/03/27/14/56/watch-2178765_1280.jpg">
+<h3>Smart Watch</h3>
+<div>
+<span class="price">₹7,999</span>
+<span class="oldPrice">₹10,000</span>
+<span class="discount">30% Off</span>
+</div>
+<p class="rating">4.4 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2016/03/27/20/51/keyboard-1284243_1280.jpg">
+<h3>Mechanical Keyboard</h3>
+<div>
+<span class="price">₹4,999</span>
+<span class="oldPrice">₹7,000</span>
+<span class="discount">28% Off</span>
+</div>
+<p class="rating">4.5 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_1280.jpg">
+<h3>Tablet</h3>
+<div>
+<span class="price">₹18,999</span>
+<span class="oldPrice">₹25,000</span>
+<span class="discount">24% Off</span>
+</div>
+<p class="rating">4.2 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2017/08/06/01/42/monitor-2581898_1280.jpg">
+<h3>Gaming Monitor</h3>
+<div>
+<span class="price">₹15,999</span>
+<span class="oldPrice">₹20,000</span>
+<span class="discount">20% Off</span>
+</div>
+<p class="rating">4.6 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/camera-1959625_1280.jpg">
+<h3>DSLR Camera</h3>
+<div>
+<span class="price">₹39,999</span>
+<span class="oldPrice">₹50,000</span>
+<span class="discount">20% Off</span>
+</div>
+<p class="rating">4.7 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2016/11/18/16/49/speaker-1839682_1280.jpg">
+<h3>Bluetooth Speaker</h3>
+<div>
+<span class="price">₹2,499</span>
+<span class="oldPrice">₹3,500</span>
+<span class="discount">28% Off</span>
+</div>
+<p class="rating">4.3 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2016/11/29/12/54/mouse-1869387_1280.jpg">
+<h3>Wireless Mouse</h3>
+<div>
+<span class="price">₹999</span>
+<span class="oldPrice">₹1,500</span>
+<span class="discount">33% Off</span>
+</div>
+<p class="rating">4.1 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2015/12/07/22/27/charging-1080677_1280.jpg">
+<h3>Power Bank</h3>
+<div>
+<span class="price">₹1,499</span>
+<span class="oldPrice">₹2,000</span>
+<span class="discount">25% Off</span>
+</div>
+<p class="rating">4.2 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://cdn.pixabay.com/photo/2016/03/27/20/51/keyboard-1284243_1280.jpg">
+<h3>Gaming Keyboard</h3>
+<div>
+<span class="price">₹3,499</span>
+<span class="oldPrice">₹5,000</span>
+<span class="discount">30% Off</span>
+</div>
+<p class="rating">4.4 ★</p>
+<button>Add To Cart</button>
+</div>
+
+
+
+<div class="card">
+
+<img src="https://cdn.pixabay.com/photo/2017/03/27/14/56/watch-2178765_1280.jpg">
+
+<h3>Smart Watch</h3>
+
+<div>
+<span class="price">₹7,999</span>
+<span class="oldPrice">₹10,000</span>
+<span class="discount">30% Off</span>
+</div>
+
+<p class="rating">4.4 ★</p>
+
+<button>Add To Cart</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<div class="footerGrid">
+
+<div>
+<h3>ShopEasy</h3>
+<p>Best online electronics store.</p>
+</div>
+
+<div>
+<h3>About</h3>
+<p>Company</p>
+<p>Careers</p>
+</div>
+
+<div>
+<h3>Help</h3>
+<p>Payments</p>
+<p>Shipping</p>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>Email: support@shopeasy.com</p>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
